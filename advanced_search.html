@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link href="favicon.ico" rel="icon">
+    <style>
+        .top{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            margin:30px;
+            }
+        a[href="index.html"]{
+            color:rgb(38, 92, 208);
+            text-decoration:none;
+        }
+        #google{
+            max-width:100px;
+            height:auto;
+        }
+        .advance{
+            margin:10px 40px;
+            padding:10px;
+            font-size: 20px;
+            color:red;
+        }
+        form{
+            margin:10px;
+            display: grid;
+            grid-template-columns: 1fr 2fr 3fr;
+            padding:20px;
+            gap:15px;
+        }
+        .textb{
+            border-radius:1px;
+            border:1px solid #d9d9d9;
+            border-top:1px solid #c0c0c0;
+            width:530px;
+            height:25px;
+        }
+        .topword{
+            margin:30px 20px 10px ; 
+            display:grid;
+            grid-template-columns: 1fr 2fr 3fr;
+            gap:20px;       
+        }
+        .textwide{
+            width:530px;
+            height:25px;
+        }
+        .submit{
+            margin-top:12px;
+            background-color:dodgerblue;
+            color:white;
+            border:1px solid dodgerblue;
+            height:33px;
+            float: right;
+            border-radius:3px;
+        }
+        .submit:hover{
+            border:1px solid rgba(0, 110, 255, 0.934);
+            background-color:rgb(8, 130, 252)
+        }
+        .textright{
+            color:rgba(24, 23, 23, 0.546);
+            font-size:13px;
+        }
+        .textrighttop{
+            color:rgba(24, 23, 23, 0.546);
+            font-size:14px;
+            font-weight:bold;
+        }
+        hr{ 
+            border:none;
+            height:1px;
+            background-color:rgb(219, 225, 219);
+        }
+    </style>
+    </head>
+    <body>
+        <div class="top">
+            <a href="index.html">
+            <img id="google" src="google.png">
+            </a>
+            <a href="index.html" >Google Search</a>  
+        </div>
+        <div class="advance">
+            進階搜尋  
+        </div>
+        <hr>
+        <div class="content">
+            <div class="topword">
+                <div>尋找符合以下條件的網頁...</div>
+                <div class="textwide"></div>
+                <div class="textrighttop">搜尋框使用方法。</div>
+            </div>
+            <form action="https://google.com/search">
+                <div class="text">含以下所有字詞：</div> 
+                <div><input  class="textb"  autofocus="autofocus"   type="text" name="as_q"></div>
+                <div class="textright">輸入關鍵字：黃金獵犬</div>
+                <div class="text">與以下字詞或語句完全相符：</div>
+                <div><input class="textb"  type="text" name="as_epq"></div>
+                <div class="textright">在指定完全相符的字詞前後加上引號： "黃金獵犬"</div>
+                <div class="text">含以下任何字詞： </div>
+                <div><input class="textb" type="text" name="as_oq"></div>
+                <div class="textright">在各搜尋字詞之間輸入 OR： 小型 OR 標準</div>
+                <div class="text">不含以下任何字詞：</div>
+                <div><input class="textb" type="text" name="as_eq"></div>
+                <div class="textright">在想要排除的字詞前面加上減號： -黃金, -"拉布拉多"</div>
+                <div></div>
+                <div><input class="submit" type="submit" value="Advanced Search"></div>
+            </form>
+        </div>
+         
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Image Search</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0 ">
+        <link href="favicon.ico" rel="icon">
+        <style>
+            .other{
+                text-align:right;
+                margin:25px;
+            }
+            a[href="index.html"]{
+                color:rgb(38, 92, 208);
+                text-decoration:none;
+                padding:10px;
+            }
+            a:hover{
+                color:orange;
+                text-decoration:underline;
+            }
+            .google_pic{
+                text-align:center;
+                margin:35px;
+            }
+            .search{
+                text-align:center;
+                margin:20px;
+            }
+
+            #google{
+                font-size:18px;
+                border:2px solid silver ;
+                border-radius: 20px;
+                padding:10px 10px 10px 40px;
+                width:100%;
+                max-width: 600px; 
+                height:50px;
+                box-sizing:border-box;
+                background-image:url('icons8-search-64.png');
+                background-size: 20px 20px;
+                background-position:10px center;
+                background-repeat:no-repeat;
+
+            }
+            #submit{
+                font-size:18px;
+                margin:25px;
+                height:40px;
+                width:140px;
+                background-color: whitesmoke;
+                color:black;
+                border:none;
+                border-radius: 5px;
+                cursor:pointer; 
+            }
+            #submit:hover{
+                border:1px solid lightgray;
+            }
+    
+         
+        </style>
+    </head>
+    <body>
+        <div class="other">
+            <a href="index.html" >Google Search</a>
+        </div>
+        <div class="google_pic">
+            <img  id="pic" src="google.png" alt="google">
+            <span id="goopic">images</span>
+        </div>
+        <div class="search">    
+            <form action="https://google.com/search">
+                <input id="google"  type="search" autofocus autocomplete="off" name="q">
+                <br>        
+                <input name="tbm" value="isch" type="hidden">
+                <input id="submit" type="submit" value="Image Search">
+            </form>
+        </div>
+    </body>
+</html>
